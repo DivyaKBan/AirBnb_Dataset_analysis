@@ -35,14 +35,19 @@ README.md          # Project Documentation
 
 ## Analysis performed--
 1. Price Distribution
+   
    <img width="704" height="468" alt="1output" src="https://github.com/user-attachments/assets/6f043a8a-5213-4bf5-a9d3-33523c947c9a" />
-2. Price depending on neighbourhood group and room type
+3. Price depending on neighbourhood group and room type
+   
    <img width="571" height="453" alt="2output" src="https://github.com/user-attachments/assets/c21fe895-a5f7-4589-af52-c813228bc055" />
-3. Reviews and price relation
+5. Reviews and price relation
+   
    <img width="704" height="468" alt="3output" src="https://github.com/user-attachments/assets/f5384019-1e41-489b-993b-ac6eb7fe1363" />
-4. Geographical Distribution
+7. Geographical Distribution
+   
    <img width="859" height="545" alt="4output" src="https://github.com/user-attachments/assets/7f4bb6d0-1c16-4502-a799-92610363f12d" />
-5. Heatmap analysis of data
+9. Heatmap analysis of data
+    
    <img width="878" height="632" alt="5output" src="https://github.com/user-attachments/assets/51fa18c3-92ff-43e4-8fad-718812ad429a" />
 
 
