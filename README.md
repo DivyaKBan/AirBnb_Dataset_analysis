@@ -1,91 +1,76 @@
-# AirBnb_Dataset_analysis
-This project analyzes Airbnb listing data for New York City to uncover insights into pricing, availability, and geographical distribution. The analysis involves data cleaning, exploratory data analysis (EDA), and visualization to understand the factors influencing the Airbnb market in NYC.
-NYC Airbnb Listing Analysis
-This project analyzes Airbnb listing data for New York City to uncover insights into pricing, availability, and geographical distribution. The analysis involves data cleaning, exploratory data analysis (EDA), and visualization to understand the factors influencing the Airbnb market in NYC.
+# 📊 Data Analysis Project
 
-Dataset
-The dataset used in this analysis is datasets.csv, which contains information about Airbnb listings in New York City. The key columns used for this analysis include:
+## 📌 Overview
+This project performs **data cleaning, exploratory data analysis (EDA), and visualization** on a dataset (`datasets.csv`).  
+It involves handling missing values, removing duplicates, type casting, and creating meaningful visualizations to understand the dataset better.
 
-id: Listing ID
+---
 
-host_id: Host ID
+## 📂 Project Structure
+```
+Project_1.ipynb   # Jupyter Notebook with full code
+datasets.csv       # Dataset used in the analysis
+README.md          # Project Documentation
+```
 
-latitude: Latitude of the listing
+---
 
-longitude: Longitude of the listing
+## 🚀 Features
+✅ Load and explore dataset  
+✅ Handle missing values & duplicates  
+✅ Perform type casting for relevant columns  
+✅ Generate descriptive statistics  
+✅ Perform **univariate & bivariate analysis**  
+✅ Visualize insights using **Matplotlib & Seaborn**  
 
-price: Price per night
+---
 
-minimum_nights: Minimum number of nights for a booking
+## 🛠️ Tech Stack
+- **Python 3.x**
+- **Pandas, NumPy** – Data handling & processing  
+- **Matplotlib, Seaborn** – Data Visualization  
+- **Jupyter Notebook**
 
-number_of_reviews: Total number of reviews
+---
 
-reviews_per_month: Average number of reviews per month
+## 📥 Installation & Usage
+### 1️⃣ Clone this repository  
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-availability_365: Number of days the listing is available in a year
+### 2️⃣ Install dependencies  
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
 
-beds: Number of beds
+### 3️⃣ Run the notebook  
+```bash
+jupyter notebook Project_1.ipynb
+```
 
-neighbourhood_group: Borough of the listing (e.g., Brooklyn, Manhattan)
+---
 
-room_type: Type of room (e.g., Private room, Entire home/apt)
+## 📊 Steps Performed in the Notebook
+1️⃣ **Data Loading** – Imported dataset using Pandas.  
+2️⃣ **Data Cleaning** – Removed null values, duplicates, and performed type casting.  
+3️⃣ **Descriptive Statistics** – Used `.describe()`, `.shape`, `.dtypes` for insights.  
+4️⃣ **Exploratory Data Analysis (EDA)** –  
+   - Univariate analysis using histograms & boxplots.  
+   - Outlier detection (`price < 1500`).  
+5️⃣ **Visualization** – Used Seaborn & Matplotlib for better understanding of data.  
 
-Analysis
-The analysis is conducted in a Jupyter Notebook (Project_1.ipynb) and includes the following steps:
+---
 
-Data Loading and Cleaning: The dataset is loaded using pandas. Null values and duplicate entries are removed to ensure data quality. Data types of columns like id and host_id are converted to appropriate formats.
+## 📈 Sample Visualizations
+- Distribution plots of numeric columns  
+- Boxplots for outlier detection  
+- Correlation heatmap  
 
-Exploratory Data Analysis (EDA):
+---
 
-Univariate Analysis:
-
-Distribution of listing prices is examined to understand the price range. A boxplot is used to identify and handle outliers, with a focus on listings under $1500.
-
-Distribution of availability_365 is analyzed to see how many listings are available year-round.
-
-Bivariate and Multivariate Analysis:
-
-A new feature, price_per_bed, is created to normalize the price.
-
-The relationship between neighbourhood_group, room_type, and price_per_bed is explored using bar plots.
-
-The correlation between the number of reviews and the price per bed is visualized with a scatter plot.
-
-A heatmap is generated to show the correlation between all numerical variables.
-
-Geographical Analysis: A scatter plot of latitude and longitude is used to visualize the geographical distribution of listings across the different neighbourhood groups in NYC.
-
-Key Findings
-Price Distribution: The majority of Airbnb listings in NYC are priced under $500 per night, with a significant concentration between $50 and $200.
-
-Availability: A large number of listings have high availability throughout the year, suggesting that many are dedicated rental properties.
-
-Geographical Insights: Manhattan has the highest average price per bed, especially for entire homes/apartments. Brooklyn follows as the next most expensive borough.
-
-Correlations: There is a moderate positive correlation between the price of a listing and the number of beds it offers. Other numerical features show weak correlations with each other.
-
-Visualizations
-The notebook includes several visualizations to illustrate the findings:
-
-Boxplot of prices to show the distribution and identify outliers.
-
-Histograms for price and availability distributions.
-
-Bar plot showing the average price per bed by neighbourhood group and room type.
-
-Scatter plot illustrating the relationship between price and number of reviews.
-
-Pairplot to visualize relationships between key numerical features.
-
-Scatter plot showing the geographical locations of listings.
-
-Heatmap of the correlation matrix.
-
-How to Use
-Clone the repository.
-
-Ensure you have Python, Jupyter Notebook, pandas, numpy, matplotlib, and seaborn installed.
-
-Place the datasets.csv file in the same directory as the notebook.
-
-Run the Project_1.ipynb notebook to reproduce the analysis.
+## 📌 Results & Insights
+🔹 Cleaned dataset with consistent data types  
+🔹 Identified and removed duplicates & null values  
+🔹 Extracted statistical insights and visual patterns  
